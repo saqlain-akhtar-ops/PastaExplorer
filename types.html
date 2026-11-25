@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Explorer - Pasta Types</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Pasta Explorer</h1>
+        <p class="subtitle">A Simple Guide to the History, Types and Recipes of Pasta</p>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="history.html">History</a> |
+            <a href="types.html" class="active">Pasta Types</a> |
+            <a href="recipes.html">Recipes</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Popular Types of Pasta</h2>
+        <p>Below is a collection of popular pasta varieties grouped by their shape and category. Use the search box or category filter to find a specific pasta.</p>
+
+        <!-- Search and Filter Controls (Member 3) -->
+        <div class="filter-bar">
+            <label for="searchInput">Search pasta: </label>
+            <input type="text" id="searchInput" placeholder="e.g. spaghetti">
+
+            <label for="categorySelect">Category: </label>
+            <select id="categorySelect">
+                <option value="All">All</option>
+                <option value="Long Pasta">Long Pasta</option>
+                <option value="Short Pasta">Short Pasta</option>
+                <option value="Stuffed Pasta">Stuffed Pasta</option>
+                <option value="Tube Pasta">Tube Pasta</option>
+                <option value="Soup Pasta">Soup Pasta</option>
+            </select>
+        </div>
+
+        <p id="noResultsMsg" class="hidden">No matching pasta types found.</p>
+
+        <!-- Pasta Cards Grid -->
+        <div class="card-container" id="pastaContainer">
+
+            <!-- Long Pasta -->
+            <div class="card pasta-card" data-category="Long Pasta">
+                <img src="images/spaghetti.jpg" alt="Spaghetti">
+                <span class="category-tag">Long Pasta</span>
+                <h3 class="pasta-name">Spaghetti</h3>
+                <p>Long, thin, solid round strands of pasta. Works well with simple tomato, oil, or meat sauces.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Long Pasta">
+                <img src="images/linguine.jpg" alt="Linguine">
+                <span class="category-tag">Long Pasta</span>
+                <h3 class="pasta-name">Linguine</h3>
+                <p>Long ribbons that are slightly flattened like "little tongues". Often served with pesto or seafood.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Long Pasta">
+                <img src="images/fettuccine.jpg" alt="Fettuccine">
+                <span class="category-tag">Long Pasta</span>
+                <h3 class="pasta-name">Fettuccine</h3>
+                <p>Flat, thick ribbon pasta popular in Roman cuisine. Famous for being paired with creamy Alfredo sauce.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Long Pasta">
+                <img src="images/tagliatelle.jpg" alt="Tagliatelle">
+                <span class="category-tag">Long Pasta</span>
+                <h3 class="pasta-name">Tagliatelle</h3>
+                <p>Long, flat ribbons from Emilia-Romagna usually made with egg dough and served with Bolognese sauce.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Long Pasta">
+                <img src="images/bucatini.jpg" alt="Bucatini">
+                <span class="category-tag">Long Pasta</span>
+                <h3 class="pasta-name">Bucatini</h3>
+                <p>Thick spaghetti-like pasta with a tiny hole running through the center of each strand.</p>
+            </div>
+
+            <!-- Short Pasta -->
+            <div class="card pasta-card" data-category="Short Pasta">
+                <img src="images/penne.jpg" alt="Penne">
+                <span class="category-tag">Short Pasta</span>
+                <h3 class="pasta-name">Penne</h3>
+                <p>Short cylinder pieces with angled ends and ridges that trap chunky vegetable and tomato sauces.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Short Pasta">
+                <img src="images/fusilli.jpg" alt="Fusilli">
+                <span class="category-tag">Short Pasta</span>
+                <h3 class="pasta-name">Fusilli</h3>
+                <p>Corkscrew or spiral-shaped short pasta. The twists hold onto pesto, herb sauces, and salad dressings.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Short Pasta">
+                <img src="images/farfalle.jpg" alt="Farfalle">
+                <span class="category-tag">Short Pasta</span>
+                <h3 class="pasta-name">Farfalle</h3>
+                <p>Commonly called bow-tie or butterfly pasta. Great for light cream sauces and cold pasta salads.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Short Pasta">
+                <img src="images/rigatoni.jpg" alt="Rigatoni">
+                <span class="category-tag">Short Pasta</span>
+                <h3 class="pasta-name">Rigatoni</h3>
+                <p>Wide, ribbed short pasta pieces with flat-cut ends. Ideal for heavy meat sauces and baked pasta dishes.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Short Pasta">
+                <img src="images/macaroni.jpg" alt="Macaroni">
+                <span class="category-tag">Short Pasta</span>
+                <h3 class="pasta-name">Macaroni</h3>
+                <p>Small curved elbow tubes. Most famously used for making baked macaroni and cheese or soups.</p>
+            </div>
+
+            <!-- Stuffed Pasta -->
+            <div class="card pasta-card" data-category="Stuffed Pasta">
+                <img src="images/ravioli.jpg" alt="Ravioli">
+                <span class="category-tag">Stuffed Pasta</span>
+                <h3 class="pasta-name">Ravioli</h3>
+                <p>Two thin layers of pasta dough sealed around a filling of ricotta cheese, spinach, or minced meat.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Stuffed Pasta">
+                <img src="images/tortellini.jpg" alt="Tortellini">
+                <span class="category-tag">Stuffed Pasta</span>
+                <h3 class="pasta-name">Tortellini</h3>
+                <p>Ring-shaped pasta parcels stuffed with cheese or meat, traditionally served in warm broth or cream sauce.</p>
+            </div>
+
+            <!-- Tube Pasta -->
+            <div class="card pasta-card" data-category="Tube Pasta">
+                <img src="images/ziti.jpg" alt="Ziti">
+                <span class="category-tag">Tube Pasta</span>
+                <h3 class="pasta-name">Ziti</h3>
+                <p>Smooth, medium-wide hollow tubes often broken into smaller tubes and baked with mozzarella and tomato sauce.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Tube Pasta">
+                <img src="images/cannelloni.jpg" alt="Cannelloni">
+                <span class="category-tag">Tube Pasta</span>
+                <h3 class="pasta-name">Cannelloni</h3>
+                <p>Large cylindrical pasta tubes designed to be stuffed with spinach and ricotta, covered in sauce, and baked.</p>
+            </div>
+
+            <!-- Small/Soup Pasta -->
+            <div class="card pasta-card" data-category="Soup Pasta">
+                <img src="images/orzo.jpg" alt="Orzo">
+                <span class="category-tag">Soup Pasta</span>
+                <h3 class="pasta-name">Orzo</h3>
+                <p>Tiny pasta shaped like grains of rice. Commonly added to vegetable soups, broths, and light salads.</p>
+            </div>
+
+            <div class="card pasta-card" data-category="Soup Pasta">
+                <img src="images/ditalini.jpg" alt="Ditalini">
+                <span class="category-tag">Soup Pasta</span>
+                <h3 class="pasta-name">Ditalini</h3>
+                <p>Very short tube pasta shaped like little thimbles. Popular in traditional Italian minestrone soup.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Pasta Explorer - First Year Web Development Mini Project</p>
+        <p>Created using HTML, CSS, and Basic JavaScript</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

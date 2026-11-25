@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Explorer - Recipes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Pasta Explorer</h1>
+        <p class="subtitle">A Simple Guide to the History, Types and Recipes of Pasta</p>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="history.html">History</a> |
+            <a href="types.html">Pasta Types</a> |
+            <a href="recipes.html" class="active">Recipes</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Simple Pasta Recipes</h2>
+        <p>Here are 8 easy pasta recipes you can make at home. Click the "Hide / Show Recipe Details" button on any card to collapse or view its steps.</p>
+
+        <div class="recipe-list">
+
+            <!-- Recipe 1 -->
+            <div class="recipe-card">
+                <img src="images/aglio-e-olio.jpg" alt="Spaghetti Aglio e Olio">
+                <div class="recipe-content">
+                    <h3>1. Spaghetti Aglio e Olio</h3>
+                    <p>A classic and quick Italian pasta made with garlic, olive oil, and red chili flakes.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe1')">Hide / Show Recipe Details</button>
+                    <div id="recipe1" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>200g Spaghetti</li>
+                            <li>4 cloves Garlic (sliced thin)</li>
+                            <li>3 tablespoons Olive oil</li>
+                            <li>1 teaspoon Chili flakes</li>
+                            <li>Fresh chopped Parsley</li>
+                            <li>Salt to taste</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Boil the spaghetti in salted water until cooked.</li>
+                            <li>Heat olive oil in a pan on low heat.</li>
+                            <li>Add sliced garlic and chili flakes, and cook gently until golden.</li>
+                            <li>Add the cooked spaghetti and a splash of pasta water.</li>
+                            <li>Mix well with chopped parsley.</li>
+                            <li>Serve warm.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 2 -->
+            <div class="recipe-card">
+                <img src="images/bolognese.jpg" alt="Spaghetti Bolognese">
+                <div class="recipe-content">
+                    <h3>2. Spaghetti Bolognese</h3>
+                    <p>A hearty pasta dish served with a rich tomato and minced meat sauce.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe2')">Hide / Show Recipe Details</button>
+                    <div id="recipe2" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>250g Spaghetti</li>
+                            <li>200g Minced meat (or soy granules)</li>
+                            <li>1 Onion (chopped)</li>
+                            <li>2 cloves Garlic (minced)</li>
+                            <li>1 cup Crushed tomatoes / tomato puree</li>
+                            <li>1 teaspoon Dried oregano</li>
+                            <li>2 tablespoons Olive oil and Salt</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Heat olive oil in a saucepan and fry chopped onion and garlic.</li>
+                            <li>Add the minced meat and cook until browned.</li>
+                            <li>Pour in the crushed tomatoes and oregano.</li>
+                            <li>Simmer the sauce on low heat for 15-20 minutes.</li>
+                            <li>Boil the spaghetti in salted water and drain.</li>
+                            <li>Serve the hot sauce over the spaghetti.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 3 -->
+            <div class="recipe-card">
+                <img src="images/alfredo.jpg" alt="Fettuccine Alfredo">
+                <div class="recipe-content">
+                    <h3>3. Fettuccine Alfredo</h3>
+                    <p>Creamy and comforting ribbon pasta tossed in butter, cream, and parmesan cheese.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe3')">Hide / Show Recipe Details</button>
+                    <div id="recipe3" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>200g Fettuccine pasta</li>
+                            <li>2 tablespoons Butter</li>
+                            <li>1 cup Heavy cream (or cooking cream)</li>
+                            <li>1/2 cup Grated Parmesan cheese</li>
+                            <li>1 clove Garlic (minced)</li>
+                            <li>Salt and Black pepper</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Boil fettuccine in salted water until tender, then drain.</li>
+                            <li>Melt butter in a pan and lightly saute the garlic for 1 minute.</li>
+                            <li>Pour in the cream and let it simmer gently for 3 minutes.</li>
+                            <li>Stir in the grated parmesan cheese until smooth.</li>
+                            <li>Add the cooked fettuccine and toss to coat evenly.</li>
+                            <li>Season with salt and black pepper and serve.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 4 -->
+            <div class="recipe-card">
+                <img src="images/arrabbiata.jpg" alt="Penne Arrabbiata">
+                <div class="recipe-content">
+                    <h3>4. Penne Arrabbiata</h3>
+                    <p>Spicy short tube pasta cooked in a tangy garlic and red chili tomato sauce.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe4')">Hide / Show Recipe Details</button>
+                    <div id="recipe4" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>200g Penne pasta</li>
+                            <li>1.5 cups Tomato puree or chopped tomatoes</li>
+                            <li>3 cloves Garlic (finely chopped)</li>
+                            <li>1 teaspoon Red chili flakes</li>
+                            <li>2 tablespoons Olive oil</li>
+                            <li>Fresh basil or parsley and Salt</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Boil penne pasta in salted water and drain.</li>
+                            <li>Heat olive oil in a pan and fry the garlic and red chili flakes.</li>
+                            <li>Add the tomato puree and a pinch of salt.</li>
+                            <li>Cook on medium-low heat for 10 minutes until the sauce thickens.</li>
+                            <li>Add the boiled penne into the sauce and mix well.</li>
+                            <li>Garnish with basil or parsley and serve.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 5 -->
+            <div class="recipe-card">
+                <img src="images/pesto.jpg" alt="Pesto Pasta">
+                <div class="recipe-content">
+                    <h3>5. Pesto Pasta</h3>
+                    <p>Fresh and aromatic pasta coated with green basil, garlic, and cheese pesto sauce.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe5')">Hide / Show Recipe Details</button>
+                    <div id="recipe5" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>200g Fusilli or Linguine pasta</li>
+                            <li>4 tablespoons Basil pesto sauce</li>
+                            <li>2 tablespoons Grated Parmesan cheese</li>
+                            <li>1 tablespoon Olive oil</li>
+                            <li>Salt and Pepper to taste</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Boil the pasta in salted water according to package time.</li>
+                            <li>Save 2 tablespoons of the warm pasta cooking water before draining.</li>
+                            <li>Place the drained pasta in a mixing bowl.</li>
+                            <li>Add the basil pesto, olive oil, and splash of pasta water.</li>
+                            <li>Toss everything together so the sauce coats the pasta smoothly.</li>
+                            <li>Top with parmesan cheese and serve.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 6 -->
+            <div class="recipe-card">
+                <img src="images/carbonara.jpg" alt="Carbonara">
+                <div class="recipe-content">
+                    <h3>6. Carbonara</h3>
+                    <p>Traditional Roman pasta made with eggs, hard cheese, crispy bacon/pancetta, and black pepper.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe6')">Hide / Show Recipe Details</button>
+                    <div id="recipe6" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>200g Spaghetti</li>
+                            <li>2 Eggs</li>
+                            <li>1/2 cup Grated Pecorino or Parmesan cheese</li>
+                            <li>100g Diced bacon or pancetta</li>
+                            <li>1 teaspoon Freshly ground black pepper</li>
+                            <li>Salt for pasta water</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Boil the spaghetti in salted water.</li>
+                            <li>In a small bowl, whisk the eggs, grated cheese, and black pepper together.</li>
+                            <li>Fry the diced bacon in a pan until crispy, then turn off the heat.</li>
+                            <li>Add the hot drained spaghetti directly to the pan with the bacon.</li>
+                            <li>Quickly pour in the egg and cheese mixture while tossing with a spoon of pasta water so it forms a creamy sauce.</li>
+                            <li>Serve immediately with extra black pepper.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 7 -->
+            <div class="recipe-card">
+                <img src="images/lasagna.jpg" alt="Lasagna">
+                <div class="recipe-content">
+                    <h3>7. Lasagna</h3>
+                    <p>Baked layers of flat pasta sheets, tomato sauce, creamy white sauce, and melted cheese.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe7')">Hide / Show Recipe Details</button>
+                    <div id="recipe7" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>6-8 Lasagna pasta sheets</li>
+                            <li>2 cups Tomato and vegetable (or meat) sauce</li>
+                            <li>1 cup White sauce (bechamel) or Ricotta cheese</li>
+                            <li>1.5 cups Shredded Mozzarella cheese</li>
+                            <li>1 teaspoon Italian herbs</li>
+                            <li>Salt to taste</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Preheat the oven to 180&deg;C (350&deg;F).</li>
+                            <li>Boil the lasagna sheets for a few minutes until slightly soft (unless using oven-ready sheets).</li>
+                            <li>Spread a thin layer of tomato sauce at the bottom of a baking dish.</li>
+                            <li>Place a layer of lasagna sheets, followed by tomato sauce, white sauce, and mozzarella.</li>
+                            <li>Repeat the layers and finish with extra mozzarella cheese on top.</li>
+                            <li>Bake for 25-30 minutes until bubbling and golden brown.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 8 -->
+            <div class="recipe-card">
+                <img src="images/mac-and-cheese.jpg" alt="Macaroni and Cheese">
+                <div class="recipe-content">
+                    <h3>8. Macaroni and Cheese</h3>
+                    <p>Simple and popular comfort food made with elbow macaroni and a warm cheddar cheese sauce.</p>
+                    <button class="btn toggle-recipe-btn" onclick="toggleRecipe('recipe8')">Hide / Show Recipe Details</button>
+                    <div id="recipe8" class="recipe-details">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>200g Elbow Macaroni</li>
+                            <li>2 tablespoons Butter</li>
+                            <li>2 tablespoons All-purpose flour</li>
+                            <li>1.5 cups Warm milk</li>
+                            <li>1.5 cups Grated Cheddar cheese</li>
+                            <li>Salt and a pinch of pepper</li>
+                        </ul>
+                        <h4>Method</h4>
+                        <ol>
+                            <li>Boil the macaroni in salted water for 8 minutes, then drain.</li>
+                            <li>Melt butter in a saucepan and stir in the flour for 1 minute.</li>
+                            <li>Slowly pour in the warm milk while stirring so no lumps form.</li>
+                            <li>Cook until the milk mixture thickens slightly, then turn the heat to low.</li>
+                            <li>Add the grated cheddar cheese and stir until completely melted.</li>
+                            <li>Mix the cooked macaroni into the cheese sauce and serve hot.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Pasta Explorer - First Year Web Development Mini Project</p>
+        <p>Created using HTML, CSS, and Basic JavaScript</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

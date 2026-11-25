@@ -1,0 +1,311 @@
+/* =========================================
+   Pasta Explorer - Basic Stylesheet
+   Member 2: CSS / Design
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdfaf3;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #b84a27;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom: 3px solid #8f3518;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+.subtitle {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+}
+
+nav {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    display: inline-block;
+}
+
+nav a {
+    color: #b84a27;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    background-color: #b84a27;
+    color: #ffffff;
+}
+
+/* Main Page Container */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    color: #b84a27;
+    border-bottom: 2px solid #e2d8c5;
+    padding-bottom: 6px;
+}
+
+/* Home Intro Box */
+.intro-box {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.main-img {
+    width: 100%;
+    max-width: 450px;
+    height: 260px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    margin: 15px 0;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+/* Basic Button */
+.btn {
+    display: inline-block;
+    background-color: #b84a27;
+    color: #ffffff;
+    padding: 10px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.btn:hover {
+    background-color: #93391d;
+}
+
+/* Card Grid Layout */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 8px 0;
+    color: #333333;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.category-tag {
+    display: inline-block;
+    background-color: #f3e6d8;
+    color: #8f3518;
+    font-size: 12px;
+    padding: 3px 8px;
+    border: 1px solid #dfc8b2;
+}
+
+/* History Page Sections & Simple Timeline */
+.history-section {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+.history-section h3 {
+    margin-top: 0;
+    color: #b84a27;
+}
+
+.history-img {
+    width: 100%;
+    max-width: 380px;
+    height: 220px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    display: block;
+    margin-top: 10px;
+}
+
+.timeline-section {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.timeline-box {
+    background-color: #fdfaf3;
+    border: 1px solid #b84a27;
+    padding: 12px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.timeline-box p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.timeline-arrow {
+    font-size: 22px;
+    color: #b84a27;
+    margin: 6px 0;
+    font-weight: bold;
+}
+
+/* Search and Filter Bar on Pasta Types Page */
+.filter-bar {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.filter-bar input,
+.filter-bar select {
+    padding: 7px;
+    border: 1px solid #999999;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Recipes Page */
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.recipe-card img {
+    width: 220px;
+    height: 165px;
+    object-fit: cover;
+    border: 1px solid #dddddd;
+}
+
+.recipe-content {
+    flex: 1;
+}
+
+.recipe-content h3 {
+    margin-top: 0;
+    color: #b84a27;
+}
+
+.recipe-details {
+    margin-top: 12px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+}
+
+.recipe-details h4 {
+    margin: 10px 0 5px 0;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+    margin: 5px 0 10px 20px;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+    padding: 15px;
+    margin-top: 35px;
+    font-size: 14px;
+    color: #555555;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+/* Basic Responsive Media Query */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-card {
+        flex-direction: column;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: 190px;
+    }
+
+    .filter-bar input,
+    .filter-bar select {
+        display: block;
+        width: 95%;
+        margin: 6px 0 12px 0;
+    }
+}
