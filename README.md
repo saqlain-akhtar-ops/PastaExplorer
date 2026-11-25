@@ -4,6 +4,8 @@
 
 This is our first-year college Web Development mini-project built by a team of 4 students using HTML5, CSS3, and basic Vanilla JavaScript.
 
+**Live Website (Vercel):** https://pasta-explorer.vercel.app
+
 ---
 
 ## Project Structure
